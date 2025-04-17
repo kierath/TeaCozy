@@ -1,0 +1,206 @@
+* {
+    color: seashell;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: black;
+    opacity: 0.9;
+}
+
+header {
+    height: 69px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid seashell;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+}
+
+.logo {
+    padding-left: 10px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #7b5e57;
+    /* tea-inspired tone */
+}
+
+.main {
+    padding-top: 69px;
+    padding-bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Centers horizontally*/
+    align-items: center;
+    /*Centers vertically */
+
+}
+
+.image-container {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+}
+
+.image-container img {
+    justify-content: center;
+    width: 100%;
+}
+
+.overlay-text {
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.teas {
+    height: 200px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.teacontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*Stacks children vertically*/
+    align-items: center;
+    /*Center children horizontally*/
+}
+
+.teatitle {
+    text-align: center;
+    width: 100%;
+}
+
+.typesoftea {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.typesoftea p {
+    text-align: center;
+}
+
+.locations {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Centers horizontally*/
+    align-items: center;
+    /*Centers vertically */
+    position: relative;
+}
+
+.locations-image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.locations-image-container img {
+    top: -70px;
+    position: relative;
+    object-fit: none;
+}
+
+.overlay-text-locations {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, 50%);
+}
+
+.overlay-locations {
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.locationlist {
+    background-color: black;
+    text-align: center;
+    margin: 40px;
+    height: 200px;
+    /* Ensures the container has a fixed height */
+    width: 300px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* Ensures no gap between flex items */
+}
+
+.locationlist h3,
+.locationlist p {
+    flex-grow: 1;
+    /* Allow equal stretching */
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove padding if any */
+    display: flex;
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    text-align: center;
+}
+
+.locationlist p {
+    line-height: 2.2;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    height: 200px;
+}
+
+.copyright {
+    text-align: left;
+    padding: 20px 0;
+}
